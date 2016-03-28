@@ -10,6 +10,13 @@ p {
     color:green;
 }
 
+#header{
+    width:100%;
+    height:100px;
+    background:blue;
+}
+
+
 table {
     width:100%;
 }
