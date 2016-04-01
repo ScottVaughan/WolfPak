@@ -4,7 +4,93 @@
     <link rel="stylesheet" href="AdjustBill.css">
 	<title>Adjust Bill</title>
 </head>
+<h1>Adjust Bill</h1>
 <body>
-
+<div class="p">Roommate 1 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m1" onClick="minus(this)">-</button><span id="rm1"></span>
+<button id="p1" onClick="plus(this)">+</button></div>
+<div class="p">Roommate 2 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m2" onClick="minus(this)">-</button><span id="rm2"></span>
+<button id="p2" onClick="plus(this)">+</button></div>
+<div class="p">Roommate 3 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m3" onClick="minus(this)">-</button><span id="rm3"></span>
+<button id="p3" onClick="plus(this)">+</button></div>
+<div class="p">Roommate 4 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m4" onClick="minus(this)">-</button><span id="rm4"></span>
+<button  id="p4" onClick="plus(this)">+</button></div>
 </body>
+<script>
+var r1 = 25;
+var r2 = 25;
+var r3 = 25;
+var r4 = 25;
+document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+
+function plus(element)
+{
+	switch(document.getElementById(element.id)) {
+		case p1:
+			r1 = r1 + 1;
+			r2 = r2 - 0.33;
+			r3 = r3 - 0.33;
+			r4 = r4 - 0.33;
+			break;
+		case p2:	
+			r1 = r1 - 0.33;
+			r2 = r2 + 1;
+			r3 = r3 - 0.33;
+			r4 = r4 - 0.33;
+			break;
+		case p3:	
+			r1 = r1 - 0.33;
+			r2 = r2 - 0.33;
+			r3 = r3 + 1;
+			r4 = r4 - 0.33;
+			break;
+		case p4:	
+			r1 = r1 - 0.33;
+			r2 = r2 - 0.33;
+			r3 = r3 - 0.33;
+			r4 = r4 + 1;
+			break;
+	}
+	document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+}
+function minus(element)
+{
+	switch(document.getElementById(element.id)) {
+		case m1:
+			r1 = r1 - 1;
+			r2 = r2 + 0.33;
+			r3 = r3 + 0.33;
+			r4 = r4 + 0.33;
+			break;
+		case m2:	
+			r1 = r1 + 0.33;
+			r2 = r2 - 1;
+			r3 = r3 + 0.33;
+			r4 = r4 + 0.33;
+			break;
+		case m3:	
+			r1 = r1 + 0.33;
+			r2 = r2 + 0.33;
+			r3 = r3 - 1;
+			r4 = r4 + 0.33;
+			break;
+		case m4:	
+			r1 = r1 + 0.33;
+			r2 = r2 + 0.33;
+			r3 = r3 + 0.33;
+			r4 = r4 - 1;
+			break;
+	}
+	document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+}
+
+</script>
 </html> 
