@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="AdjustBill.css">
-    <link rel="stylesheet" href="styles.css">
 	<title>Adjust Bill</title>
 </head>
 <body>
 <div id="header">
     <headertitle>&nbsp&nbspAdjust Bill</headertitle></div>
-<div class="p">Roommate 1 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m1" onClick="minus(this)">-</button><span id="rm1"></span>
-<button id="p1" onClick="plus(this)">+</button></div>
-<div class="p">Roommate 2 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m2" onClick="minus(this)">-</button><span id="rm2"></span>
-<button id="p2" onClick="plus(this)">+</button></div>
-<div class="p">Roommate 3 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m3" onClick="minus(this)">-</button><span id="rm3"></span>
-<button id="p3" onClick="plus(this)">+</button></div>
-<div class="p">Roommate 4 &nbsp;&nbsp;&nbsp;&nbsp;<button id="m4" onClick="minus(this)">-</button><span id="rm4"></span>
-<button  id="p4" onClick="plus(this)">+</button></div>
+
+<br>
+<br>
+<div class="p">&nbspDavid<button class="adjust" id="m1" onClick="minus(this)">-</button><span id="rm1"></span>
+<button class="adjust" id="p1" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspJeff&nbsp&nbsp <button class="adjust" id="m2" onClick="minus(this)">-</button><span id="rm2"></span>
+<button class="adjust" id="p2" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspMike <button class="adjust" id="m3" onClick="minus(this)">-</button><span id="rm3"></span>
+<button class="adjust" id="p3" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspJohn&nbsp<button class="adjust" id="m4" onClick="minus(this)">-</button><span id="rm4"></span>
+<button class="adjust" id="p4" onClick="plus(this)">+</button></div>
 </body>
 <script>
 var r1 = 25;
