@@ -2,12 +2,34 @@
 <html>
 <head>
 	<title>Current Bill</title>
+	<link rel="stylesheet" type="text/css" href="Menu.css" />
 	<link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 	<div id="header">
-    <headertitle>
-    &nbsp&nbspCurrent Bill</headertitle></div>
+	    <headertitle>
+	    &nbsp&nbspCurrent Bill</headertitle>
+
+		<div class="cbp-spmenu-push">
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+				<a href="#">Current Bill</a>
+				<a href="#">Bill History</a>
+				<a href="Details.html">My Account</a>
+				<a href="#">Sign Out</a>
+			</nav>
+			<div class="container">
+				<div class="main">
+					<section>
+						<button id="showRight">	
+							<img  src="images/3lines_menu.png" alt="Smiley face" height="42" width="42"> 
+						</button>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+			
 	<table id="t01">
 	  <tr>
 	    <th>Residents</th>
@@ -29,5 +51,17 @@
 	<button class = "button">
 		<a href="AdjustBill.html">Adjust Bill %</a> 
 	</button>
+
+	<script src="classie.js"></script>
+	<script>
+		var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+			showRight = document.getElementById( 'showRight' ),
+			body = document.body;
+
+		showRight.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+		};
+	</script>
 </body>
 </html>

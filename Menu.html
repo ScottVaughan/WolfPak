@@ -4,35 +4,37 @@
 		<title>Blueprint: Slide and Push Menus</title>
 		<link rel="stylesheet" type="text/css" href="Menu.css" />
 	</head>
-	<body class="cbp-spmenu-push">
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-			<h3>Menu</h3>
-			<a href="#">Current Bill</a>
-			<a href="#">Bill History</a>
-			<a href="Details.html">My Account</a>
-			<a href="#">Sign Out</a>
-		</nav>
-		<div class="container">
-			<div class="main">
-				<section>
-					<h2>Slide Menus</h2>
-					<button id="showRight">
-						<img src="images/3lines_menu.png" alt="Smiley face" height="42" width="42"> 
-					</button>
-				</section>
+	<body >
+		<div class="cbp-spmenu-push">
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+				<h3>Menu</h3>
+				<a href="#">Current Bill</a>
+				<a href="#">Bill History</a>
+				<a href="Details.html">My Account</a>
+				<a href="#">Sign Out</a>
+			</nav>
+			<div class="container">
+				<div class="main">
+					<section>
+						<h2>Slide Menus</h2>
+						<button id="showRight">
+							<img  src="images/3lines_menu.png" alt="Smiley face" height="42" width="42"> 
+						</button>
+					</section>
+				</div>
 			</div>
 		</div>
-		<script src="classie.js"></script>
-		<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRight = document.getElementById( 'showRight' ),
-				body = document.body;
+			<script src="classie.js"></script>
+			<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRight = document.getElementById( 'showRight' ),
+					body = document.body;
 
-			showRight.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-			};
-			
-		</script>
+				showRight.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+				};
+				
+			</script>
 	</body>
 </html>
