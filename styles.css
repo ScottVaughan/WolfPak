@@ -91,7 +91,7 @@ a{
 	text-decoration:none;
 }
 headertitle{
-	position: fixed;
+	position: absolute;
 	padding-top: 15px;
 	/* [disabled]margin-top: 15px; */
 	}
