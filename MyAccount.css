@@ -45,6 +45,7 @@ h1{
   color: black;
   overflow:auto;
   width:100%;
+  margin-left: 10px;
   }
 .input > .label { 
   text-align: left; 
