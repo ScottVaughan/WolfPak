@@ -16,7 +16,9 @@
 			<div class="main">
 				<section>
 					<h2>Slide Menus</h2>
-					<button id="showRight">Menu</button>
+					<button id="showRight">
+						<img src="images/3lines_menu.png" alt="Smiley face" height="42" width="42"> 
+					</button>
 				</section>
 			</div>
 		</div>
@@ -25,12 +27,10 @@
 			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 				showRight = document.getElementById( 'showRight' ),
 				body = document.body;
-
 			showRight.onclick = function() {
 				classie.toggle( this, 'active' );
 				classie.toggle( menuRight, 'cbp-spmenu-open' );
 			};
-			
 		</script>
 	</body>
 </html>

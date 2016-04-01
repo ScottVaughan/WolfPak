@@ -1,6 +1,11 @@
 .cbp-spmenu {
 	background: #47a3da;
-	position: fixed;
+	position:fixed;
+	margin-right: 275px; 
+	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
+	margin is used to position it
+	
+	 */
 }
 
 .cbp-spmenu h3 {
@@ -32,9 +37,10 @@
 
 .cbp-spmenu-vertical {
 	width: 240px;
-	height: 100%;
+	height: 70%;
 	top: 0;
 	z-index: 1000;
+	/* height of container*/
 }
 
 .cbp-spmenu-vertical a {
@@ -297,7 +303,7 @@ a:hover {
 	color: #fff;
 	padding: 1.5em;
 	display: block;
-	width: 100%;
+	width: 20%;
 	cursor: pointer;
 	margin: 10px 0;
 	font-size: 0.8em;
