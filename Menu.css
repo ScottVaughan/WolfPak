@@ -19,20 +19,22 @@
 }
 
 .cbp-spmenu a {
-	
 	display: block;
-	color:#e8e8e8;
-	font-size: 1.1em;
+	color: #e8e8e8;
+	font-size: 27px;
 	font-weight: 300;
+	padding-right: 13px;
+	padding-bottom: 8px;
+	padding-left: 13px;
+	padding-top: 12px;
 }
 
 .cbp-spmenu a:hover {
-	background: #258ecd;
+	background: #6A5368;
 }
 
 .cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
+	background: #6A5368;
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -40,13 +42,16 @@
 .cbp-spmenu-vertical {
 	width: 240px;
 	height: 430px;
-	top: 0;
-	z-index: 1000;	/* height of container*/
+	z-index: 1000;	/* height of container*/	
 }
 
 .cbp-spmenu-vertical a {
 	border-bottom: 1px solid #402E3E;
-	padding: 1em;
+	height: 57px;
+	/* [disabled]padding-top: 1.5em; */
+	/* [disabled]padding-right: 1px; */
+	/* [disabled]padding-left: 1.5em; */
+	/* [disabled]padding-bottom: 1.5em; */
 }
 
 .cbp-spmenu-horizontal {
@@ -55,6 +60,9 @@
 	left: 0;
 	z-index: 1000;
 	overflow: hidden;
+	padding-left: 1px;
+	padding-top: 0px;
+	padding-bottom: 1px;
 }
 
 .cbp-spmenu-horizontal h3 {
@@ -220,7 +228,6 @@ a {
 }
 
 a:hover {
-	color: #000;
 }
 
 .main,
@@ -271,7 +278,7 @@ a:hover {
 
 .container > header nav a:after {
 	content: attr(data-info);
-	color: #47a3da;
+	color: #6A5368;
 	position: absolute;
 	width: 600%;
 	top: 120%;
@@ -286,7 +293,7 @@ a:hover {
 }
 
 .container > header nav a:hover {
-	background: #47a3da;
+	background: #6A5368;
 }
 /*I dont think we need this stuff
 .main > section {
@@ -299,6 +306,11 @@ a:hover {
 	font-weight: 300;
 	color: #ccc;
 }*/
+#signout {
+	padding-left: 46px;
+	padding-right: 46px;
+	margin-top: 200px;
+	}
 
 #showRight {
 	position: relative;
