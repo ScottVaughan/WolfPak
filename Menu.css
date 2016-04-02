@@ -1,13 +1,12 @@
 .cbp-spmenu {
 	background: #4d394b;
-	position: fixed;
+	position: relative;
 	margin-right: 527px;
-	margin-top: 175px;
-	
-	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
+	margin-top: 70px;	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
 	margin is used to position it
 	
 	 */
+	margin-left: 92px;
 }
 
 .cbp-spmenu h3 {
@@ -304,7 +303,7 @@ a:hover {
 #showRight {
 	position: relative;
 	left: 110px;
-	top: -20px;
+	top: -520px;
 	width: 70px;
 	height: 70px;
 	background: #4d394b;
