@@ -1,7 +1,9 @@
 .cbp-spmenu {
-	background: #47a3da;
-	position:fixed;
-	margin-right: 275px; 
+	background: #4d394b;
+	position: fixed;
+	margin-right: 527px;
+	margin-top: 175px;
+	
 	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
 	margin is used to position it
 	
@@ -18,8 +20,9 @@
 }
 
 .cbp-spmenu a {
+	
 	display: block;
-	color: #fff;
+	color:#e8e8e8;
 	font-size: 1.1em;
 	font-weight: 300;
 }
@@ -37,14 +40,13 @@
 
 .cbp-spmenu-vertical {
 	width: 240px;
-	height: 70%;
+	height: 430px;
 	top: 0;
-	z-index: 1000;
-	/* height of container*/
+	z-index: 1000;	/* height of container*/
 }
 
 .cbp-spmenu-vertical a {
-	border-bottom: 1px solid #258ecd;
+	border-bottom: 1px solid #402E3E;
 	padding: 1em;
 }
 
@@ -214,6 +216,8 @@ body {
 a {
 	color: #f0f0f0;
 	text-decoration: none;
+	height: 25px;
+	/* [disabled]margin-top: -6px; */
 }
 
 a:hover {
@@ -334,6 +338,7 @@ section #showRight img {
 	background: #aaa;
 	pointer-events: none;
 }
+
 
 /*
 .icon-drop:before, 

@@ -74,6 +74,8 @@ button:hover{
 	background: #9DEFC5;
 	}
 button{
+	color: black;
+	text-decoration:none;
 	border: 1px solid #45d18a;
 	margin-left: 13px;
 	margin-right: auto;
@@ -94,10 +96,7 @@ button{
 	-webkit-box-shadow: 0px 4px 8px;
 }
 
-a{
-	color: black;
-	text-decoration:none;
-}
+
 headertitle{
 	position: absolute;
 	padding-top: 17px;
