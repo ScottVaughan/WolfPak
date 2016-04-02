@@ -298,32 +298,36 @@ a:hover {
 }*/
 
 #showRight {
-
 	position: relative;
 	left: 110px;
 	top: -20px;
 	width: 70px;
-	height: 40px;
-
-
+	height: 70px;
 	background: #4d394b;
 	border: none;
-	
 	color: #fff;
 	padding: 1.5em;
 	display: block;
-
 	cursor: pointer;
-	margin: 20px 0;
+	margin-top: 20px;
+	margin-right: 44px;
+	margin-bottom: 20px;
 	font-size: 0.8em;
+	margin-left: auto;
+	box-shadow: none;
+	border-radius: 0px;
+}
+section #showRight img {
+	margin-top: -26px;
+	margin-left: -12px;
 }
 
 #showRight:hover {
-	background: #258ecd;
+	background: #6A5368;
 }
 
 #showRight button.active {
-	background: #0d77b6;
+	background: #887286;
 }
 
 .main > section button.disabled {

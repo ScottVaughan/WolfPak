@@ -93,6 +93,7 @@ button{
 	box-shadow: 0px 4px 8px;
 	-webkit-box-shadow: 0px 4px 8px;
 }
+
 a{
 	color: black;
 	text-decoration:none;
@@ -103,3 +104,4 @@ headertitle{
 	/* [disabled]margin-top: 15px; */
 
 	}
+
