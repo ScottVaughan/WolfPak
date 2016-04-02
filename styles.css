@@ -1,14 +1,14 @@
 body {
 	font-family: 'Lato', sans-serif;
     background-color: lightgrey;
-	background-image: url(background.png);
+	background-image: url(phoneWire.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 66px;
-	width:236px;
-	
+	margin-top: 105px;
+	width:280px;
+
 }
 
 h1 {
@@ -36,7 +36,7 @@ p {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: auto;
-	
+
 }
 
 
@@ -77,13 +77,13 @@ button{
 	border: 1px solid #45d18a;
 	margin-left: 13px;
 	margin-right: auto;
-	margin-top: 15px;
+	margin-top: 20px;
 	background-color: #45d18a;
 	color: black;
 	font-weight: bold;
 	padding-top: 7px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 67px;
+	padding-left: 67px;
 	padding-bottom: 5px;
 	text-align: center;
 	text-decoration: none;
@@ -101,5 +101,5 @@ headertitle{
 	position: absolute;
 	padding-top: 17px;
 	/* [disabled]margin-top: 15px; */
-	
+
 	}
