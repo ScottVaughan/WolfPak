@@ -1,14 +1,16 @@
 .cbp-spmenu {
 	background: #4d394b;
+	z-index: -1;
 	position: relative;
-	margin-right: 527px;
-	margin-top: 70px;	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
+	margin-right: 527px;	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
 	margin is used to position it
 	
 	 */
-	margin-left: 92px;
+	margin-left: 46px;
 	box-shadow: -3px 0 6px #000000;
 	-webkit-box-shadow: -3px 0 6px #000000;
+	margin-top: -108px;	
+	
 }
 
 .cbp-spmenu h3 {
@@ -44,7 +46,7 @@
 .cbp-spmenu-vertical {
 	width: 240px;
 	height: 430px;
-	z-index: 1000;	/* height of container*/	
+		/* height of container*/	
 }
 
 .cbp-spmenu-vertical a {
@@ -60,7 +62,6 @@
 	width: 100%;
 	height: 150px;
 	left: 0;
-	z-index: 1000;
 	overflow: hidden;
 	padding-left: 1px;
 	padding-top: 0px;
@@ -98,6 +99,7 @@
 	right: 0px;
 }
 
+
 /* Horizontal menu that slides from the top or bottom */
 
 .cbp-spmenu-top {
@@ -119,10 +121,8 @@
 /* Push classes applied to the body */
 
 .cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-	height: 783px;
+	
+
 }
 
 .cbp-spmenu-push-toright {
@@ -137,9 +137,12 @@
 
 .cbp-spmenu,
 .cbp-spmenu-push {
+
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	
+		
 }
 
 /* Example media queries */
@@ -318,7 +321,7 @@ a:hover {
 #showRight {
 	position: relative;
 	left: 110px;
-	top: -520px;
+	top: 0px;
 	width: 70px;
 	height: 70px;
 	background: #4d394b;
@@ -351,8 +354,11 @@ section #showRight img {
 .main > section button.disabled {
 	background: #aaa;
 	pointer-events: none;
+	
 }
-
+.cbp-spmenu-open {
+	z-index:100;
+}
 
 /*
 .icon-drop:before, 

@@ -10,7 +10,14 @@
 	<div id="header">
 <headertitle>
 	    &nbsp&nbspCurrent Bill</headertitle>
-
+        <nav class=  "cbp-spmenu-right" id="cbp-spmenu-s2b">
+        				<div class="main">
+					<section>
+						<button id="showRight"><img  src="images/3lines_menu.png" alt="" height="42" width="42"> </button>
+					</section>
+				</div>
+		</nav>
+        
 		<div class="cbp-spmenu-push">
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 		<a href="CurrentBill.html">Current Bill</a>
@@ -19,13 +26,12 @@
 	  <button id = "signout">Sign Out</button>
 			</nav>
 			<div class="container">
-				<div class="main">
-					<section>
-						<button id="showRight"><img  src="images/3lines_menu.png" alt="Smiley face" height="42" width="42"> </button>
-					</section>
-				</div>
+
 			</div>
 		</div>
+        <div class="hideblock">
+   	    	<img src="images/hide.png" width="264" height="440" alt=""/>
+        </div>
 </div>
 
 	<table id="t01">
@@ -58,7 +64,6 @@
 		var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 			showRight = document.getElementById( 'showRight' ),
 			body = document.body;
-
 		showRight.onclick = function() {
 			classie.toggle( this, 'active' );
 			classie.toggle( menuRight, 'cbp-spmenu-open' );
