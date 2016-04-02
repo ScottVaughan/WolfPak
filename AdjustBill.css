@@ -1,0 +1,16 @@
+.adjust {
+	height: 40px;
+	width: 40px;
+	border: 1px solid #959595;
+	background-color: #45d18a;
+	color: black;
+	font-weight: bold;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	text-align: none;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+}

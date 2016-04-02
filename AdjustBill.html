@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="AdjustBill.css">
-    <link rel="stylesheet" href="styles.css">
 	<title>Adjust Bill</title>
 </head>
 <body>
+<div id="header">
+    <headertitle>&nbsp&nbspAdjust Bill</headertitle></div>
 
+<br>
+<br>
+<div class="p">&nbspDavid<button class="adjust" id="m1" onClick="minus(this)">-</button><span id="rm1"></span>
+<button class="adjust" id="p1" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspJeff&nbsp&nbsp <button class="adjust" id="m2" onClick="minus(this)">-</button><span id="rm2"></span>
+<button class="adjust" id="p2" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspMike <button class="adjust" id="m3" onClick="minus(this)">-</button><span id="rm3"></span>
+<button class="adjust" id="p3" onClick="plus(this)">+</button></div>
+<br>
+<div class="p">&nbspJohn&nbsp<button class="adjust" id="m4" onClick="minus(this)">-</button><span id="rm4"></span>
+<button class="adjust" id="p4" onClick="plus(this)">+</button></div>
 </body>
+<script>
+var r1 = 25;
+var r2 = 25;
+var r3 = 25;
+var r4 = 25;
+document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+
+function plus(element)
+{
+	switch(document.getElementById(element.id)) {
+		case p1:
+			r1 = r1 + 1;
+			r2 = r2 - 0.33;
+			r3 = r3 - 0.33;
+			r4 = r4 - 0.33;
+			break;
+		case p2:	
+			r1 = r1 - 0.33;
+			r2 = r2 + 1;
+			r3 = r3 - 0.33;
+			r4 = r4 - 0.33;
+			break;
+		case p3:	
+			r1 = r1 - 0.33;
+			r2 = r2 - 0.33;
+			r3 = r3 + 1;
+			r4 = r4 - 0.33;
+			break;
+		case p4:	
+			r1 = r1 - 0.33;
+			r2 = r2 - 0.33;
+			r3 = r3 - 0.33;
+			r4 = r4 + 1;
+			break;
+	}
+	document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+}
+function minus(element)
+{
+	switch(document.getElementById(element.id)) {
+		case m1:
+			r1 = r1 - 1;
+			r2 = r2 + 0.33;
+			r3 = r3 + 0.33;
+			r4 = r4 + 0.33;
+			break;
+		case m2:	
+			r1 = r1 + 0.33;
+			r2 = r2 - 1;
+			r3 = r3 + 0.33;
+			r4 = r4 + 0.33;
+			break;
+		case m3:	
+			r1 = r1 + 0.33;
+			r2 = r2 + 0.33;
+			r3 = r3 - 1;
+			r4 = r4 + 0.33;
+			break;
+		case m4:	
+			r1 = r1 + 0.33;
+			r2 = r2 + 0.33;
+			r3 = r3 + 0.33;
+			r4 = r4 - 1;
+			break;
+	}
+	document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+}
+
+</script>
 </html> 
