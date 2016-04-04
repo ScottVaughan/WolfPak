@@ -3,7 +3,7 @@
 }*/
 #loadMore {
 	position: relative;
-	top: 25px;
+	top: 5px;
 	left: 100px;
     color: #45d18a;
     cursor:pointer;
@@ -13,7 +13,7 @@
 }
 #showLess {
 	position: relative;
-	top: 25px;
+	top: 5px;
 	left: 100px;
 	color: #4d394b;
    /*color:purple; this color shows up alot better, may be distracting*/

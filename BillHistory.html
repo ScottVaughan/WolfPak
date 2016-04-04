@@ -46,30 +46,30 @@
     </thead>
     <tbody id="billHistBody">
       <tr>
-        <td>February</td> <td>$140.56</td>
-      </tr>
-			<tr>
         <td>January</td> <td>$138.75</td>
       </tr>
-			<tr>
-        <td>December</td> <td>$141.62</td>
+      <tr>
+        <td>February</td> <td>$140.56</td>
       </tr>
-			<tr>
-        <td>November</td> <td>$139.55</td>
+	  <tr>
+        <td>March</td> <td>$141.62</td>
       </tr>
-			<tr>
-        <td>October</td> <td>$138.94</td>
+	  <tr>
+        <td>April</td> <td>$139.55</td>
       </tr>
-			<tr>
+	
+      <!--
+	  <tr>
         <td>September</td> <td>$142.46</td>
-      </tr>
-			<tr>
+      </tr >
+	  <tr>
         <td>August</td> <td>$138.20</td>
-      </tr>
+      </tr>-->
     </tbody>
+    
   </table>
-	<div id="loadMore"><b>Load more</div>
-	<div id="showLess">Show less</div>
+	<div id="loadMore" onclick="loadmore()"><b>Load more</div>
+	<div id="showLess" onclick="showless()">Show less</div>
 <script src="classie.js"></script>
 	<script>
 		var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
@@ -79,6 +79,59 @@
 			classie.toggle( this, 'active' );
 			classie.toggle( menuRight, 'cbp-spmenu-open' );
 		};
+
+		function loadmore() {
+			//document.getElementById('t01').style.display = 'table-cell';
+
+			var table = document.getElementById('t01');
+		    var tableLength = document.getElementById('t01')
+    			.getElementsByTagName('tbody')[0]
+    			.getElementsByTagName('tr').length;
+
+    		/*if statement keeps it from going out of the phone*/
+    		if(tableLength < 8){
+    			if(tableLength == 4){
+	    			var row = table.insertRow(tableLength +1 );
+
+				    var cell1 = row.insertCell(0);
+				    var cell2 = row.insertCell(1);
+				    cell1.innerHTML = "June";
+				    cell2.innerHTML = "$138.94";
+
+				    var row = table.insertRow(tableLength+1);
+		 			var cell3 = row.insertCell(0);
+				    var cell4 = row.insertCell(1);
+					cell3.innerHTML = "May";
+				    cell4.innerHTML = "$142.46";
+
+    			}else if(tableLength == 6){
+    				var row = table.insertRow(tableLength +1 );
+
+				    var cell1 = row.insertCell(0);
+				    var cell2 = row.insertCell(1);
+				    cell1.innerHTML = "August";
+				    cell2.innerHTML = "$118.93";
+
+				    var row = table.insertRow(tableLength+1);
+		 			var cell3 = row.insertCell(0);
+				    var cell4 = row.insertCell(1);
+					cell3.innerHTML = "July";
+				    cell4.innerHTML = "$122.46";
+    			}
+				
+			}
+		}
+		function showless(){
+			var tableLength = document.getElementById('t01')
+    			.getElementsByTagName('tbody')[0]
+    			.getElementsByTagName('tr').length;
+    			
+    			if(tableLength > 2){
+    				document.getElementById("t01").deleteRow(tableLength - 1);
+					document.getElementById("t01").deleteRow(tableLength - 1);
+    			}
+		
+		}
 	</script>
 </body>
 
