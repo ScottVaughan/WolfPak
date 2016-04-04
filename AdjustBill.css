@@ -12,5 +12,22 @@
 	text-align: none;
 	text-decoration: none;
 	display: inline-block;
+	
 	font-size: 12px;
 }
+
+div.p {
+	margin-left: 10px;
+	font-family: 'Lato', sans-serif;
+	color: black;
+	font-size: 15pt;
+	text-align: center;
+	/*float: left;*/
+
+}
+
+.values {
+	margin-left: 9px;
+	
+}
+
