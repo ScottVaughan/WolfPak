@@ -2,14 +2,21 @@
   display: none;
 }*/
 #loadMore {
-    color:green;
+	position: relative;
+	top: 25px;
+	left: 100px;
+    color: #45d18a;
     cursor:pointer;
 }
 #loadMore:hover {
     color:black;
 }
 #showLess {
-    color:red;
+	position: relative;
+	top: 25px;
+	left: 100px;
+	color: #4d394b;
+   /*color:purple; this color shows up alot better, may be distracting*/
     cursor:pointer;
 }
 #showLess:hover {
