@@ -77,21 +77,23 @@ table#t01 th	{
 }
 button:hover{
 	background: #9DEFC5;
-	}
+}
+
 button{
+	position: relative;
+	left: 40px;
+	width: 200px;
 	cursor:pointer;
 	color: black;
 	text-decoration: none;
 	border: 1px solid #45d18a;
-	margin-left: 20px;
-	margin-right: 13px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	background-color: #45d18a;
 	color: #131313;
 	font-weight: bold;
 	padding-top: 7px;
-	padding-right: 67px;
-	padding-left: 67px;
 	padding-bottom: 5px;
 	text-align: center;
 	text-decoration: none;
