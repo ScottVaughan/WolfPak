@@ -1,5 +1,5 @@
 .cbp-spmenu {
-	background: #4d394b;
+	background: rgb(16,108,200);
 	z-index: -1;
 	position: relative;
 	margin-right: 527px;	/* fixed position allows it to be located anywhere on screen (overlaying other elements)
@@ -34,7 +34,7 @@
 }
 
 .cbp-spmenu a:hover {
-	background: #6A5368;
+	background: #47a3da;
 }
 
 .cbp-spmenu a:active {
@@ -50,7 +50,7 @@
 }
 
 .cbp-spmenu-vertical a {
-	border-bottom: 1px solid #402E3E;
+	border-bottom: 1px solid #47a3da;
 	height: 57px;
 	/* [disabled]padding-top: 1.5em; */
 	/* [disabled]padding-right: 1px; */
@@ -234,6 +234,7 @@ a {
 }
 
 a:hover {
+
 }
 
 .main,
@@ -284,7 +285,7 @@ a:hover {
 
 .container > header nav a:after {
 	content: attr(data-info);
-	color: #6A5368;
+	color: #47a3da;
 	position: absolute;
 	width: 600%;
 	top: 120%;
@@ -299,7 +300,7 @@ a:hover {
 }
 
 .container > header nav a:hover {
-	background: #6A5368;
+	background: #47a3da;
 }
 /*I dont think we need this stuff
 .main > section {
@@ -344,11 +345,11 @@ section #showRight img {
 }
 
 #showRight:hover {
-	background: #6A5368;
+	background: #47a3da;
 }
 
 #showRight button.active {
-	background: #887286;
+	background: #47a3da;
 }
 
 .main > section button.disabled {
