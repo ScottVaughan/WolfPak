@@ -42,8 +42,8 @@ p {
 table {
 	width: 100%;
 	font-weight: bold;
-	box-shadow: 0px 1px 2px;
-	-webkit-box-shadow: 0px 1px 2px;
+	box-shadow: 0px 0px 0px;
+	-webkit-box-shadow: 0px 0px 0px;
 	color: #131313;
 }
 table, th, td {
@@ -70,7 +70,7 @@ table#t01 tr:nth-child(odd) {
    background-color:#fff;
 }
 table#t01 th	{
-	background-color: #DBDBDB;
+	background-color: #E4E4E4;
 	color: black;
 }
 button:hover{
