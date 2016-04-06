@@ -56,6 +56,16 @@ table, th, td {
 	margin-left: auto;
 	margin-top: 0px;
 }
+#check{
+	background:#45d18a;
+	padding-left:0px;
+	padding-right:0px;
+	}
+#check2{
+	width: 12px;
+	padding-left:2px;
+	padding-right:2px;
+	}
 th, td {
 	height: 30px;
 	padding-top: 11px;
