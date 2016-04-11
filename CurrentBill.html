@@ -71,7 +71,8 @@
     </a>
     
     <div class="notification">
-    	    <img id="notice" src="images/notification.png" onclick="myFunction()" width="280" height="460" alt=""/> </div>
+    	    <img id="notice" src="images/notification.png" onclick="myFunction()" width="280" height="460" alt=""/>
+            </div>
             
 
 <script>
@@ -81,10 +82,10 @@ var p2 = JSON.parse(localStorage.getItem('percentagestorage2'));
 var p3 = JSON.parse(localStorage.getItem('percentagestorage3'));
 var p4 = JSON.parse(localStorage.getItem('percentagestorage4'));
 
-document.getElementById("bill1").innerHTML = "$"+200*(p1/100);
-document.getElementById("bill2").innerHTML = "$"+200*(p2/100);
-document.getElementById("bill3").innerHTML = "$"+200*(p3/100);
-document.getElementById("bill4").innerHTML = "$"+200*(p4/100);
+document.getElementById("bill1").innerHTML = "$"+(200*(p1/100)).toFixed(2);
+document.getElementById("bill2").innerHTML = "$"+(200*(p2/100)).toFixed(2);
+document.getElementById("bill3").innerHTML = "$"+(200*(p3/100)).toFixed(2);
+document.getElementById("bill4").innerHTML = "$"+(200*(p4/100)).toFixed(2);
 };
 
 function myFunction() {
