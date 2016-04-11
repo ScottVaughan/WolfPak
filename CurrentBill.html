@@ -60,11 +60,12 @@
       <tr>
 	    <td>Jeff</td>
         <td id="bill4">$67.25</td>
-        <td id="check3"></td>
+        <td id="check4"></td>
 		</tr>
 	</table>
     <a href="AdjustBill.html">
     <button class = "button">Adjust Bill %</button>
+    </a>
      <a href="#">
     <button class = "button" onclick="myFunction2()">Collect Utilities</button>
     </a>
@@ -75,25 +76,24 @@
 
 <script>
 function setpercent() {
-var totalbill  200;
 var p1 = JSON.parse(localStorage.getItem('percentagestorage1'));
 var p2 = JSON.parse(localStorage.getItem('percentagestorage2'));
 var p3 = JSON.parse(localStorage.getItem('percentagestorage3'));
 var p4 = JSON.parse(localStorage.getItem('percentagestorage4'));
 
-document.getElementById("bill1").innerHTML = "$"+totalbill*(p1/100);
-document.getElementById("bill2").innerHTML = "$"+totalbill*(p2/100);
-document.getElementById("bill3").innerHTML = "$"+totalbill*(p3/100);
-document.getElementById("bill4").innerHTML = "$"+totalbill*(p4/100);
-}
+document.getElementById("bill1").innerHTML = "$"+200*(p1/100);
+document.getElementById("bill2").innerHTML = "$"+200*(p2/100);
+document.getElementById("bill3").innerHTML = "$"+200*(p3/100);
+document.getElementById("bill4").innerHTML = "$"+200*(p4/100);
+};
 
 function myFunction() {
 document.getElementById("notice").style.visibility = "hidden";
-}
+};
 
 function myFunction2() {
 document.getElementById("notice").style.visibility = "visible";
-}
+};
 
 </script>
             
