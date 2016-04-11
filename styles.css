@@ -177,7 +177,7 @@ headertitle{
 	padding-bottom: 21px;
 	padding-right: 58px;
 	}
-	.hideblock{
+.hideblock{
 	z-index: 100;
 	position: relative;
 	margin-left: 182px;
@@ -186,4 +186,9 @@ headertitle{
 	left: 98px;
 	margin-right: 110px;
 	margin-top: -435px;
+	}
+.notification{
+	margin-top: -349px;
+	z-index: 2;
+	visibility:hidden;
 	}

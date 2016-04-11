@@ -7,7 +7,7 @@
 	<title>Adjust Bill</title>
 
 </head>
-<body>
+<body onload="setpercent()">
 	<div id="header">
 <headertitle>
 	    &nbsp&nbspAdjust Bill</headertitle>
@@ -69,6 +69,15 @@
 </div>
 
 </body>
+
+
+
+
+
+
+
+
+
 <script>
 var r1 = 25;
 var r2 = 25;
@@ -78,6 +87,18 @@ document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
 document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
 document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
 document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+
+function setpercent() {
+var r1 = JSON.parse(localStorage.getItem('percentagestorage1'));
+var r2 = JSON.parse(localStorage.getItem('percentagestorage2'));
+var r3 = JSON.parse(localStorage.getItem('percentagestorage3'));
+var r4 = JSON.parse(localStorage.getItem('percentagestorage4'));
+
+document.getElementById("rm1").innerHTML = " " + r1.toFixed(2) + "%";
+document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
+document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
+document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+}
 
 function plus(element)
 {
@@ -111,6 +132,11 @@ function plus(element)
 	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
 	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
 	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+	
+localStorage.setItem('percentagestorage1', JSON.stringify(r1.toFixed(2)));
+localStorage.setItem('percentagestorage2', JSON.stringify(r2.toFixed(2)));
+localStorage.setItem('percentagestorage3', JSON.stringify(r3.toFixed(2)));
+localStorage.setItem('percentagestorage4', JSON.stringify(r4.toFixed(2)));
 }
 function minus(element)
 {
@@ -144,6 +170,10 @@ function minus(element)
 	document.getElementById("rm2").innerHTML = " " + r2.toFixed(2) + "%";
 	document.getElementById("rm3").innerHTML = " " + r3.toFixed(2) + "%";
 	document.getElementById("rm4").innerHTML = " " + r4.toFixed(2) + "%";
+localStorage.setItem('percentagestorage1', JSON.stringify(r1.toFixed(2)));
+localStorage.setItem('percentagestorage2', JSON.stringify(r2.toFixed(2)));
+localStorage.setItem('percentagestorage3', JSON.stringify(r3.toFixed(2)));
+localStorage.setItem('percentagestorage4', JSON.stringify(r4.toFixed(2)));
 }
 
 </script>
